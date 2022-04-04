@@ -23,7 +23,9 @@ Course Outcome 5 (CO5):
 
 1. Build sample collections/documents to perform the shell commands like replica set,
  indexing etc. (K6)
+
 Course Outcome 6 (CO6):
+
 1. Develop sample applications using any of the front end tools and NoSQL. (K6)
 2. Usage of concerned Online/Cloud Storage Management Systems like MongoDB
 Atlas, Cassandra DataStax etc. (K6)
