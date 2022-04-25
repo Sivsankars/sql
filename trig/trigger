@@ -1,0 +1,23 @@
+create database students;
+use students;
+create table student(rollno varchar(10) primary key,studname varchar(10),sub1 varchar(10),sub2 varchar(10),sub3 varchar(10));
+create table result(rollno varchar(10),studname varchar(10),total_marks varchar(10),percentage varchar(10));
+insert into student values("1","abhijith","35","55","85"),
+("2","adarsh","15","60","10"),
+("3","binoy","96","99","94");
+select * from student;
+
+select * from result;
+drop table student;
+
+
+/*
+CREATE DEFINER=`root`@`localhost` TRIGGER `students`.`student_AFTER_INSERT` AFTER INSERT ON `student` FOR EACH ROW
+BEGIN
+declare total varchar(10);
+declare perc varchar(10);
+set total=new.sub1+new.sub2+new.sub3;
+set perc=((total/300)*100);
+insert into result values(new.rollno,new.studname,total,perc);
+END
+*/
